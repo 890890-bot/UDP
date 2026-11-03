@@ -12,7 +12,7 @@ set -euo pipefail
 [[ $EUID -ne 0 ]] && { echo "请使用 root 运行: curl -fsSL <链接> | sudo bash"; exit 1; }
 
 # 脚本本体地址: 默认 GitHub raw，可用环境变量覆盖 (如 Gitee/对象存储)
-SRC="${WLTY_SRC:-https://raw.githubusercontent.com/你的用户名/你的仓库/main/wlty.sh}"
+SRC="${WLTY_SRC:-https://raw.githubusercontent.com/890890-bot/UDP/main/wlty.sh}"
 DEST="/usr/local/bin/wlty"
 
 echo "▶ 正在下载: $SRC"
